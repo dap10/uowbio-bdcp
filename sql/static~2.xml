@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" 
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/home/orca/schemata/registryObjects.xsd">
+<registryObject group="University of Wollongong">
+	<key>oai:au.edu.uow.biomechanics:static~1</key>
+	<originatingSource type= "authoritative">http://www.uow.edu.au</originatingSource>
+	<party type="Group">
+		<name type="AbbreviatedGroupName">
+			<namePart type="title">BRL</namePart>
+		</name>
+		<name type="primary">
+			<namePart type="title">University of Wollongong. Biomechanics Research Laboratory </namePart>
+		</name>
+
+		<location>
+ 			<address>
+ 				<physical type="streetAddress">
+					<addressPart type="text">Biomechanics Research Laboratory
+School of Health Sciences
+University of Wollongong
+Northfields Avenue
+Wollongong N.S.W. 2522</addressPart>
+				</physical>
+ 			</address>
+ 		</location>
+
+			<location type="coverage">
+				<spatial type="text">Wollongong, N.S.W.</spatial>
+			</location>
+
+		<relatedObject>
+			<key>uow.edu.au/COL/68</key>
+			<relation type="hasAssociationWith"/>
+		</relatedObject>
+
+		<relatedObject>
+			<key>uow.edu.au/COL/69</key>
+			<relation type="hasAssociationWith"/>
+		</relatedObject>
+
+		<relatedObject>
+			<key>uow.edu.au/PTY/44</key>
+			<relation type="hasAssociationWith"/>
+		</relatedObject>
+
+		<relatedObject>
+			<key>uow.edu.au/PTY/45</key>
+			<relation type="hasAssociationWith"/>
+		</relatedObject>
+
+		<relatedObject>
+			<key>uow.edu.au/PTY/46</key>
+			<relation type="hasAssociationWith"/>
+		</relatedObject>
+
+		<relatedObject>
+			<key>uow.edu.au/PTY/47</key>
+			<relation type="hasAssociationWith"/>
+		</relatedObject>
+
+		<relatedObject>
+			<key>uow.edu.au/SER/70</key>
+			<relation type="hasPart"/>
+		</relatedObject>
+
+		<relatedObject>
+			<key>uow.edu.au/SER/71</key>
+			<relation type="hasPart"/>
+		</relatedObject>
+		<subject type="anzsrc-for" xml:lang="en">1106</subject>
+
+		<subject type="anzsrc-for" xml:lang="en">1103</subject>
+
+		<subject type="anzsrc-for" xml:lang="en">1199</subject>
+		<description type="full">The Biomechanics Research Laboratory (BRL) is housed within the School of Health Sciences, Faculty of Health and Behavioural Sciences at the University of Wollongong. The BRL is committed to developing innovative strategies, based on rigorous applied biomechanics research, to decrease injury potential and optimise the quality of life for individuals of all ages. The dedicated research facility (11 x 6.5 m.) is equipped with state-of-the-art, sophisticated biomechanical measurement systems, which enable accurate qualification of human motion in both the laboratory and field-based environments. Equipment in the laboratory includes: 
+OptoTRAK 3020 optoelectronic motion analysis system which can be integrated with our Kistler multichannel force platforms (400 x 600 mm) using Visual 3D software. This allows us to capture 3D movements and analyse performance and technique during sporting manoeuvres or conduct clinical gait assessments. We can also use digital video cameras or high speed video cameras (>210 fps), either inside or outside the lab, for the same purposes. 
+Novel emed AT4 system to measure dynamic plantar pressures. 
+Novel Pliance system can be used to measure pressure under various objects including bra straps and backpacks. 
+Noraxon T900 telemetry EMG system to measure muscle activity and activation patterns. 
+KinCom isokinetic dynamometer for muscle strength testing. 
+Chattanooga EMG Retrainer can monitor muscle activity while providing visual and audio feedback on set targets. 
+Infoot 3D foot scanner determines individual foot shape characteristics. 
+Sonosite ultrasound system for musculoskeletal imaging. 
+Kinaesthetic ability trainer can be used for functional testing and training of neuromuscular control. 
+Physiological Profile Assessement to estimate falls risk. 
+Dynamic Cruciate Tester which is a instrumented knee laxity arthrometer. It can be used to measure knee laxity after cruciate ligament damage. 
+Custom-designed monorail and harness system allows us to assess gait on slippery or uneven surfaces and on individuals at risk of falling. 
+Treadmill can be used to facilitate continuous gait and breast motion analysis while running. 
+The BRL also uses LabView, MyoResearch, Visual 3D, ToolBench, SiliconCoach, Hu-M-an, Novel software, BioWare, MatLab and AutoCAD software for data collection and analysis.
+
+  </description>
+
+
+		<relatedInfo type="website">
+			<identifier type="http">http://www.uow.edu.au/health/brl/index.html</identifier>
+			<title>Biomechanics Research Laboratory (BRL)</title>
+			<notes></notes>
+		</relatedInfo>	</party>
+</registryObject>
+</registryObjects>

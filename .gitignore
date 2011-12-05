@@ -1,0 +1,22 @@
+.* #Ignore all dotfiles ...
+.classpath
+.project
+!.gitignore # except for .gitignore
+!.settings
+
+#ignore version
+grails-app/views/_version.gsp
+
+#ignore target
+target/*
+target/**/*
+
+#ignore logs
+*.log
+
+test-reports/*
+test-reports/**/*
+
+classes/*
+classes/**/*
+cobertura.ser

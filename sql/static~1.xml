@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" 
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/home/orca/schemata/registryObjects.xsd">
+<registryObject group="University of Wollongong">
+	<key>oai:au.edu.uow.biomechanics:static~1</key>
+	<originatingSource type= "authoritative">http://www.uow.edu.au</originatingSource>
+	<party type="Group">
+
+		<identifier type="AU-ANL:PEAU">http://nla.gov.au/nla.party-464691</identifier>		<name type="AbbreviatedGroupName">
+			<namePart type="title">UOW</namePart>
+		</name>
+		<name type="primary">
+			<namePart type="title">University of Wollongong</namePart>
+		</name>
+
+		<location>
+ 			<address>
+ 				<physical type="streetAddress">
+					<addressPart type="text">University of Wollongong
+Northfields Avenue
+Wollongong N.S.W. 2522</addressPart>
+				</physical>
+ 			</address>
+ 		</location>
+
+			<location type="coverage">
+				<spatial type="text">Wollongong, N.S.W. </spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Dubai, United Arab Emirates</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Nowra, N.S.W.</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Bega, N.S.W.</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Batemans Bay, N.S.W. 
+
+</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Moss Vale, N.S.W.</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Loftus, N.S.W.
+</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Sydney</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Singapore</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Malaysia</spatial>
+			</location>
+
+			<location type="coverage">
+				<spatial type="text">Hong Kong</spatial>
+			</location>
+
+		<!--related objects by application -->
+
+		<subject type="anzsrc-for" xml:lang="en">1301</subject>
+
+		<subject type="local" xml:lang="en">higher education</subject>
+
+		<subject type="local" xml:lang="en">universities</subject>
+
+		<subject type="local" xml:lang="en">research</subject>
+		<description type="full">The University of Wollongong originated in 1951 when a Division of the then New South Wales University of Technology was established in Wollongong. Ten years later the Division became the Wollongong College of the University of New South Wales and, in 1975, the University of Wollongong was incorporated by the New South Wales Parliament as an independent institution of higher learning. In 1982, the University amalgamated with the Wollongong Institute of Higher Education which had begun life in 1962 at the Wollongong Teachers' College. The merger formed the basis for a period of rapid growth in the 1980s and the emergence of the University of Wollongong's distinctive identity as an enterprising institution with a personalised style and a growing reputation for excellence in teaching and research.
+In over 50 years, the University has grown from a provincial feeder college with 300 students to an international university with over 26,000 students spread across three campuses and five access centres. originally established as a provider of technical education for engineers and metallurgists required for the region's steel industry, the University now offers a wide range of courses across nine faculties-Arts, Education, Health &amp; Behavioural Sciences, Engineering, Law, Science, Informatics, Commerce and Creative Arts. 
+UOW has developed into a multi-campus institution. The main Wollongong campus is on the original site five kilometres north-west of the city centre and now covers an area of 82.4 hectares with 94 permanent buildings and six student residences. The Dubai Campus in the United Arab Emirates was established in 1993 and the Shoalhaven Campus was opened in 2000 at Nowra on the New South Wales South Coast. In addition, there are University Education Centres in Bega, Batemans Bay, Moss Vale and Loftus as well as the Sydney Business School. The University also offers courses in conjunction with partner institutions in a number of offshore locations including Singapore, Malaysia and Hong Kong. 
+The University has always had a strong research focus and has developed an international reputation for its applied research (often in partnership with industry or government) in areas relevant to national economic, technological and social goals. It is home to eight Research Institutes and three ARC Key Centres for Teaching and Research-in Smart Foods, Bulk Solids and Particulate Technologies and Asia Pacific Social Transformation Studies. In addition, the University is a partner in four Co-operative Research Centres (CRC)-in Intelligent Manufacturing Systems, Railway &amp; Engineering Technologies, Welded Structures and Smart Internet Technology.
+The teaching, research and cultural life of the University is supported by state-of-the-art facilities, including an extensive library collection, an interactive Science Centre, and a Recreation &amp; Aquatic Centre, In 2002, the University announced the establishment of a Wollongong Innovation Campus on a 20 hectare site at Brandon Park. A joint venture with the NSW government, the private sector and local councils, this science and technology will be developed over a ten year period commencing in 2003.
+</description>
+
+
+		<relatedInfo type="website">
+			<identifier type="http">http://www.uow.edu.au/</identifier>
+			<title>University of Wollongong</title>
+			<notes></notes>
+		</relatedInfo>
+	</party>
+</registryObject>
+</registryObjects>

@@ -1,0 +1,191 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<version>0.0.1</version>
+	<groupId>uow-bdcp</groupId>
+
+	<artifactId>uow-bdcp</artifactId>
+	<packaging>pom</packaging>
+	<name>UoW Biomechanics Data Capture</name>
+
+	<repositories>
+		<repository>
+			<id>openqa-releases</id>
+			<name>OpenQA Releases</name>
+			<url>http://nexus.openqa.org/content/repositories/releases</url>
+		</repository>
+		<repository>
+			<id>codehaus</id>
+			<url>http://repository.codehaus.org</url>
+		</repository>
+		<repository>
+			<id>cukes</id>
+			<url>http://cukes.info/maven</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>cukes</id>
+			<url>http://cukes.info/maven</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<properties>
+		<cuke4duke.version>0.4.3</cuke4duke.version>
+		<groovy.version>1.7.6</groovy.version>
+		<selenium.version>2.0.0</selenium.version>
+		<gherkin.version>2.3.5</gherkin.version>
+		<cucumber.version>0.10.2</cucumber.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.0-801.jdbc4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cuke4duke</groupId>
+			<artifactId>cuke4duke</artifactId>
+			<version>${cuke4duke.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.picocontainer</groupId>
+			<artifactId>picocontainer</artifactId>
+			<version>2.8.3</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-htmlunit-driver</artifactId>
+			<version>${selenium.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>${selenium.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.webdriver</groupId>
+			<artifactId>webdriver-support</artifactId>
+			<version>0.9.7089</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>${groovy.version}</version>
+		</dependency>
+
+
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.0.2</version>
+					<configuration>
+						<source>1.5</source>
+						<target>1.5</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<groupId>cuke4duke</groupId>
+				<artifactId>cuke4duke-maven-plugin</artifactId>
+				<version>${cuke4duke.version}</version>
+				<configuration>
+                                        <jvmArgs>
+                                                <jvmArg>-Xmx256m</jvmArg>
+                                                <jvmArg>-XX:MaxPermSize=128m</jvmArg>
+                                        </jvmArgs>
+					<cucumberArgs>
+						<cucumberArg>--color</cucumberArg>
+						<cucumberArg>--verbose</cucumberArg>
+						<cucumberArg>--strict</cucumberArg>
+						<cucumberArg>--guess</cucumberArg>
+					</cucumberArgs>
+					<gems>
+						<gem>install gherkin --version ${gherkin.version}</gem>
+						<gem>install cuke4duke --version ${cuke4duke.version}</gem>
+					</gems>
+				</configuration>
+				<executions>
+					<execution>
+						<id>run-features</id>
+						<phase>integration-test</phase>
+						<goals>
+							<goal>cucumber</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>intersect</groupId>
+						<artifactId>uploader</artifactId>
+						<version>1.0</version>
+						<scope>system</scope>
+						<systemPath>${basedir}/uploader-repo/uploader.jar</systemPath>
+					</dependency>
+					<dependency>
+						<groupId>intersect</groupId>
+						<artifactId>commons-httpclient</artifactId>
+						<version>3.1</version>
+						<scope>system</scope>
+						<systemPath>${basedir}/uploader-repo/commons-httpclient-3.1.jar</systemPath>
+					</dependency>
+					<dependency>
+						<groupId>intersect</groupId>
+						<artifactId>log4j</artifactId>
+						<version>1.2.15</version>
+						<scope>system</scope>
+						<systemPath>${basedir}/uploader-repo/log4j-1.2.15.jar</systemPath>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.groovy.maven</groupId>
+				<artifactId>gmaven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

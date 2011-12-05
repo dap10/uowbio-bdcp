@@ -1,0 +1,13 @@
+dn: uid=chrisk,ou=people,dc=biomechanics,dc=local
+uid: 4081
+uid: chrisk
+cn: Chris Kenward
+displayName: Chris Kenward
+givenName: Chris
+sn: Kenward
+objectClass: organizationalperson
+objectClass: inetOrgPerson
+objectClass: person
+userPassword: password
+mail: chrisk@biomechanics.local
+mail: chris_kenward@biomechanics.local

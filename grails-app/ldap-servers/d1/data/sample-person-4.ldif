@@ -1,0 +1,13 @@
+dn: uid=abe,ou=people,dc=biomechanics,dc=local
+uid: 4081
+uid: abe
+cn: John Abe
+displayName: John Abe
+givenName: John
+sn: Abe
+objectClass: organizationalperson
+objectClass: inetOrgPerson
+objectClass: person
+userPassword: password
+mail: abe@biomechanics.local
+mail: john_abe@biomechanics.local

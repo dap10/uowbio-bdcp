@@ -1,0 +1,12 @@
+dn: uid=researcher,ou=people,dc=biomechanics,dc=local
+uid: 7777
+uid: researcher
+cn: The Researcher
+displayName: The Researcher
+givenName: The
+sn: Researcher
+objectClass: organizationalperson
+objectClass: inetOrgPerson
+objectClass: person
+userPassword: password
+mail: researcher@biomechanics.local

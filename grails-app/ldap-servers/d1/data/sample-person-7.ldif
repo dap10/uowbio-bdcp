@@ -1,0 +1,13 @@
+dn: uid=carlos,ou=people,dc=biomechanics,dc=local
+uid: 7777
+uid: carlos
+cn: Carlos Aya
+displayName: Carlos Aya
+givenName: Carlos
+sn: Aya
+objectClass: organizationalperson
+objectClass: inetOrgPerson
+objectClass: person
+userPassword: password1
+mail: carlos@biomechanics.local
+mail: carlos_aya@biomechanics.local
