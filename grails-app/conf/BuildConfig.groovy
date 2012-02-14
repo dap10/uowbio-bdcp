@@ -28,9 +28,13 @@ grails.project.dependency.resolution = {
 		// specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
 		// runtime 'mysql:mysql-connector-java:5.1.13'
+		runtime 'hsqldb:hsqldb:1.8.0.10'
+		
+		compile 'joda-time:joda-time-hibernate:1.3'
+		compile 'org.jadira.usertype:usertype.jodatime:1.9'
 	}
     
     plugins{
-        runtime ":greenmail:1.2.2.2-SNAPSHOT"
+        //runtime ":greenmail:1.2.2.2-SNAPSHOT"
     }
 }

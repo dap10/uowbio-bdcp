@@ -4,7 +4,7 @@ import java.text.NumberFormat
 import java.util.Date
 
 import org.joda.time.*
-import org.joda.time.contrib.hibernate.*
+import org.jadira.usertype.dateandtime.joda.*
 
 import au.org.intersect.bdcp.enums.FieldType
 import au.org.intersect.bdcp.util.TextUtils
@@ -30,7 +30,7 @@ class StudyAnalysedDataField {
     
     static mapping = {
         date type: PersistentLocalDate
-        time type: PersistentLocalTimeAsTime
+        time type: PersistentInstantAsMillisLong
         
         table 'study_analysed_field'
         columns
